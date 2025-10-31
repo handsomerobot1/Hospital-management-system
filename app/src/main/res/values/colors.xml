@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bgAdmin">#F2F5F8</color>
+    <color name="adminPrimary">#2C3E50</color>
+
+    <color name="primary">#0069C0</color>
+    <color name="primaryVariant">#004A8C</color>
+    <color name="bgLight">#F7FAFF</color>
+    <color name="divider">#E0E6F0</color>
+    <color name="textPrimary">#0F172A</color>
+
+    <color name="warningOrange">#F59E0B</color>
+    <color name="deleteRed">#DC2626</color>
+    <color name="neutralGray">#6B7280</color>
+    <color name="textSecondary">#5B6478</color>
+    <color name="primaryBlue">#2563EB</color>
+</resources>

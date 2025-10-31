@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/doctorSlotRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgLight"
+    tools:context=".doctorActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Your Slots"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Date Selection -->
+            <EditText
+                android:id="@+id/etSelectDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Date"
+                android:focusable="false"
+                android:inputType="none"
+                android:drawableStart="@drawable/list"
+                android:drawablePadding="8dp"
+                android:padding="12dp"
+
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Time Slot Selection -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/etStartTime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Start Time"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:drawableStart="@drawable/list"
+                    android:drawablePadding="8dp"
+                    android:padding="12dp"
+
+                    android:layout_marginEnd="8dp"/>
+
+                <EditText
+                    android:id="@+id/etEndTime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="End Time"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:drawableStart="@drawable/list"
+                    android:drawablePadding="8dp"
+                    android:padding="12dp"
+
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddSlot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Slot"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/primaryBlue"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvAddedSlotsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Added Slots"
+                android:textColor="@color/textPrimary"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- RecyclerView to show slots -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerAddedSlots"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scrollbars="vertical"
+                tools:listitem="@layout/item_time_slot"/>
+
+            <Button
+                android:id="@+id/btnSaveSlots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Slots"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#67DB6D"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </ScrollView>

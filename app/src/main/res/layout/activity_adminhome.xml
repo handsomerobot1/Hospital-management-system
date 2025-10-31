@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_home_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgAdmin"
+    android:padding="24dp"
+    tools:context=".adminhomeActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvAdminHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_home_title"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+        android:textColor="@color/adminPrimary"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvAdminSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_home_subtitle"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        android:textColor="@color/adminPrimary"
+        app:layout_constraintTop_toBottomOf="@id/tvAdminHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp" />
+
+    <!-- Grid container for 4 buttons -->
+    <GridLayout
+        android:id="@+id/gridOptions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/tvAdminSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- List of Doctors -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardListDoctors"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_margin="8dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/list"
+                    android:contentDescription="@string/desc_list_doctor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_list_doctors"
+                    android:textStyle="bold"
+                    android:textColor="@color/adminPrimary"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- List of Staff -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardListStaff"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_margin="8dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/list"
+                    android:contentDescription="@string/desc_list_staff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_list_staff"
+                    android:textStyle="bold"
+                    android:textColor="@color/adminPrimary"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Add Doctor -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAddDoctor"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_margin="8dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/list"
+                    android:contentDescription="@string/desc_add_doctor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_add_doctor"
+                    android:textStyle="bold"
+                    android:textColor="@color/adminPrimary"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Add Staff -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAddStaff"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:layout_margin="8dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/list"
+                    android:contentDescription="@string/desc_add_staff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_add_staff"
+                    android:textStyle="bold"
+                    android:textColor="@color/adminPrimary"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

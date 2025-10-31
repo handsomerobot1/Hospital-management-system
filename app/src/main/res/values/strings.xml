@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Hospital Mangement System</string>
+    <!-- res/values/strings.xml -->
+
+
+    <string name="logo_desc">App logo</string>
+    <string name="login_subtitle">Book appointments with doctors fast</string>
+    <string name="role_patient">Patient</string>
+    <string name="role_doctor">Doctor</string>
+    <string name="hint_email_or_phone">Email or phone</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="action_login">Log in</string>
+    <string name="no_account">Dont have an account?</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="support_line">For urgent help call: +8801XXXXXXXXX</string>
+    <string name="autofill_email">email</string>
+    <string name="autofill_password">password</string>
+
+    <string name="doctor_logo_desc">Doctor logo</string>
+    <string name="doctor_login_title">Doctor Login</string>
+    <string name="doctor_login_subtitle">Access your appointments and patient records</string>
+    <string name="hint_doctor_id">Doctor ID</string>
+    <string name="hint_email">Email</string>
+
+    <string name="admin_logo_desc">Admin panel logo</string>
+    <string name="admin_login_title">Admin Login</string>
+    <string name="admin_login_subtitle">Manage doctors, patients, and appointments</string>
+    <string name="hint_admin_id">Admin ID</string>
+    <string name="admin_support_text">Need help? Contact system support: +8801XXXXXXXXX</string>
+
+    <string name="admin_home_title">Admin Dashboard</string>
+    <string name="admin_home_subtitle">Manage doctors, staff, and records</string>
+
+    <string name="btn_list_doctors">List of Doctors</string>
+    <string name="btn_list_staff">List of Staff</string>
+    <string name="btn_add_doctor">Add Doctor</string>
+    <string name="btn_add_staff">Add Staff</string>
+
+    <string name="desc_list_doctor">View all registered doctors</string>
+    <string name="desc_list_staff">View all staff members</string>
+    <string name="desc_add_doctor">Add a new doctor</string>
+    <string name="desc_add_staff">Add a new staff member</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
